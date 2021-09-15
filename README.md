@@ -7,4 +7,5 @@ https://pan.baidu.com/s/1LJgPuqJcCa4IjctwiPQxXQ      access code：opqh
  
 ## Refer to <Strong-Weak Distribution Alignment for Adaptive Object Detection>:
  https://github.com/VisionLearningGroup/DA_Detection
+ https://github.com/Megvii-Nanjing/CR-DA-DET
 
