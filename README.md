@@ -5,8 +5,9 @@ Unsupervised domain adaptation is critical in various computer vision tasks, suc
 ## The models of our are:
 https://pan.baidu.com/s/1LJgPuqJcCa4IjctwiPQxXQ      access code：opqh
  
-## Refer to <Strong-Weak Distribution Alignment for Adaptive Object Detection>:
- https://github.com/VisionLearningGroup/DA_Detection
+## Refer to <Strong-Weak Distribution Alignment for Adaptive Object Detection> and <Exploring Categorical Regularization for Domain Adaptive Object Detection>:
+ * https://github.com/VisionLearningGroup/DA_Detection
+ * https://github.com/Megvii-Nanjing/CR-DA-DET
 
 ## Main requirements:
 * torch == 1.0.0
@@ -14,4 +15,7 @@ https://pan.baidu.com/s/1LJgPuqJcCa4IjctwiPQxXQ      access code：opqh
 * Python 3
 ## Environmental settings：
 This repository is developed using python 3.6.7 on Ubuntu 16.04.5 LTS. The CUDA nad CUDNN version is 9.0 and 7.4.1 respectively. We use one NVIDIA 1080ti GPU card for training and testing. Other platforms or GPU cards are not fully tested.
+ 
+## Citing this repository：
+ 
 
