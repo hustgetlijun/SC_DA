@@ -5,7 +5,7 @@ Unsupervised domain adaptation is critical in various computer vision tasks, suc
 ## The models of our are:
 https://pan.baidu.com/s/1LJgPuqJcCa4IjctwiPQxXQ      access code：opqh
  
-## Refer to <Strong-Weak Distribution Alignment for Adaptive Object Detection> and <Exploring Categorical Regularization for Domain Adaptive Object Detection>:
+## Refer to<Strong-Weak Distribution Alignment for Adaptive Object Detection>and<Exploring Categorical Regularization for Domain Adaptive Object Detection>:
  * https://github.com/VisionLearningGroup/DA_Detection
  * https://github.com/Megvii-Nanjing/CR-DA-DET
 
