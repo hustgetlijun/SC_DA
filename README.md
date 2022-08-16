@@ -1,13 +1,12 @@
 # SC_DA
 ## Abstract:
-Unsupervised domain adaptation is critical in various computer vision tasks, such as object detection, instance segmentation, which aims to alleviate performance degradation caused by domain-shift and promotes the rapid application of models such as detection model in practical tasks. Previous works use adversarial training to align global features and local features to eventually minimize the domain discrepancy. However, there is no semantic information for each pix-feature in the local features, which causes the different categories of pixel-features to align and increase the difficulty of alignment. So a Semantic Consistency Alignment(SCA) model is proposed to align the pixel-feature with the same categories and mitigate negative transfer in this paper. Firstly, a Semantic Prediction Model(SPM) is designed in SCA to predict the categories of each pixel-feature, which is trained by the source domain according to the receptive field. Then the penultimate layer of SPM as a Semantic Vector Map(SVM) is jointed with the local feature to send to the local domain discriminator. Meanwhile, the output of SPM as an attention map is used to adjust the weight of the local domain discriminator. Extensive experiments for unsupervised domain adaptation on commonly used datasets demonstrate the effectiveness of our proposed approach for robust object detection in various domain shift scenarios.
+Unsupervised domain adaptation is critical in various computer vision tasks, such as object detection, instance segmentation, etc. They attempt to reduce domain bias-induced performance degradation while also promoting model application speed. Previous works in domain adaptation object detection attempt to align image-level and instance-level shifts to eventually minimize the domain discrepancy, but they may align single-class features to mixed-class features in image-level domain adaptation because each image in the object detection task may be more than one class and object. In order to achieve single-class with single-class alignment and mixed-class with mixed-class alignment, we treat the mixed-class of the feature as a new class and propose a mixed-classes $H-divergence$ for object detection to achieve homogenous feature alignment and reduce negative transfer. Then, a Semantic Consistency Feature Alignment Model (SCFAM) based on mixed-classes $H-divergence$ was also presented. To improve single-class and mixed-class semantic information and accomplish semantic separation, the SCFAM model proposes Semantic Prediction Models (SPM) and Semantic Bridging Components (SBC). And the weight of the pix domain discriminator loss is then changed based on the SPM result to reduce sample imbalance. Extensive unsupervised domain adaption experiments on widely used datasets illustrate our proposed approach's robust object detection in domain bias settings.
 
-## The models of our are:
-https://pan.baidu.com/s/1LJgPuqJcCa4IjctwiPQxXQ      access code：opqh
+## The Datasets of our are:
+https://pan.baidu.com/s/1ZiEdHgRVhmBZvywUhvbBkQ      access code：odq6 
  
 ## Related works:
- * https://github.com/VisionLearningGroup/DA_Detection
- * https://github.com/Megvii-Nanjing/CR-DA-DET
+ * https://github.com/hustgetlijun/RCAN
 
 ## Main requirements:
 * torch == 1.0.0
