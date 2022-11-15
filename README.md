@@ -13,7 +13,7 @@ https://pan.baidu.com/s/1ZiEdHgRVhmBZvywUhvbBkQ              access code：odq6
 * torchvision == 0.2.0
 * Python 3
 ## Environmental settings：
-This repository is developed using python 3.6.7 on Ubuntu 16.04.5 LTS. The CUDA nad CUDNN version is 9.0 and 7.4.1 respectively. We use one NVIDIA 1080ti GPU card for training and testing. Other platforms or GPU cards are not fully tested.
+This repository is developed using python 3.6.7 on Ubuntu 16.04.5 LTS. The CUDA nad CUDNN version is 10.0 and 7.4.1 respectively. We use one NVIDIA 2080ti GPU card for training and testing. Other platforms or GPU cards are not fully tested.
  
 ## Citing this repository：
  
