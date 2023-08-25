@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6024e7f5-f9a1-47fa-8c50-9179074f6e46" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SW_Faster_ICR_CCR" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sbkCo10ZKFnnGBdbugLNL3GVfR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/reslut" />
+      <recent name="$PROJECT_DIR$/lib/model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lib/datasets" />
+      <recent name="$PROJECT_DIR$/lib/model" />
+      <recent name="$PROJECT_DIR$/reslut" />
+      <recent name="$PROJECT_DIR$/eval" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6024e7f5-f9a1-47fa-8c50-9179074f6e46" name="Default Changelist" comment="" />
+      <created>1621148551332</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621148551332</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1411" y="750" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1679638387268">
+      <screen x="67" y="27" width="3773" height="2133" />
+    </state>
+    <state x="1411" y="750" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.3773.2133@67.27.3773.2133" timestamp="1679638387268" />
+    <state x="1051" y="437" width="530" height="598" key="FileChooserDialogImpl" timestamp="1683528485347">
+      <screen x="83" y="34" width="2477" height="1406" />
+    </state>
+    <state x="1051" y="437" width="530" height="598" key="FileChooserDialogImpl/83.34.2477.1406@83.34.2477.1406" timestamp="1683528485347" />
+    <state x="1095" y="623" key="com.intellij.ide.util.TipDialog" timestamp="1683526724751">
+      <screen x="83" y="34" width="2477" height="1406" />
+    </state>
+    <state x="1609" y="920" key="com.intellij.ide.util.TipDialog/67.27.3773.2133@67.27.3773.2133" timestamp="1679638316263" />
+    <state x="1095" y="623" key="com.intellij.ide.util.TipDialog/83.34.2477.1406@83.34.2477.1406" timestamp="1683526724751" />
+    <state x="1618" y="924" key="com.intellij.ide.util.TipDialog/83.34.3757.2126@83.34.3757.2126" timestamp="1679638534948" />
+    <state x="1100" y="364" width="840" height="447" key="search.everywhere.popup" timestamp="1679897919658">
+      <screen x="83" y="34" width="2477" height="1406" />
+    </state>
+    <state x="1616" y="527" width="672" height="678" key="search.everywhere.popup/67.27.3773.2133@67.27.3773.2133" timestamp="1679638381690" />
+    <state x="1100" y="364" width="840" height="447" key="search.everywhere.popup/83.34.2477.1406@83.34.2477.1406" timestamp="1679897919658" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/da_train_GLJ1.0.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
