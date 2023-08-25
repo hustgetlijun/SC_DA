@@ -1,9 +1,12 @@
 # SC_DA
 ## Abstract:
-Unsupervised domain adaptation is critical in various computer vision tasks, such as object detection, instance segmentation, etc. They attempt to reduce domain bias-induced performance degradation while also promoting model application speed. Previous works in domain adaptation object detection attempt to align image-level and instance-level shifts to eventually minimize the domain discrepancy, but they may align single-class features to mixed-class features in image-level domain adaptation because each image in the object detection task may be more than one class and object. In order to achieve single-class with single-class alignment and mixed-class with mixed-class alignment, we treat the mixed-class of the feature as a new class and propose a mixed-classes $H-divergence$ for object detection to achieve homogenous feature alignment and reduce negative transfer. Then, a Semantic Consistency Feature Alignment Model (SCFAM) based on mixed-classes $H-divergence$ was also presented. To improve single-class and mixed-class semantic information and accomplish semantic separation, the SCFAM model proposes Semantic Prediction Models (SPM) and Semantic Bridging Components (SBC). And the weight of the pix domain discriminator loss is then changed based on the SPM result to reduce sample imbalance. Extensive unsupervised domain adaption experiments on widely used datasets illustrate our proposed approach's robust object detection in domain bias settings.
+Unsupervised domain adaptation is crucial for mitigating the performance degradation caused by domain bias in object detection tasks. Previous studies focus on pix-level and instance-level shifts alignment in attempts to minimize domain discrepancy. However, this method may lead to aligning single-class features with mixed-class features during image-level domain adaptation, given that each image in object detection tasks can belong to more than one category. To achieve the same category feature alignment between single-class and mixed-class, our method considers features with different mixed categories as a new class and proposes a mixed-classes $H-divergence$ to reduce domain bias for object detection. To enhance both single-class and mixed-class semantic information and achieve semantic separation for mixed-classes $H-divergence$, we employ Semantic Prediction Models (SPM) and Semantic Bridging Components (SBC). Furthermore, we reweigh the loss of the pix domain discriminator based on the SPM results to reduce sample imbalance. Our extensive experiments on widely used datasets illustrate how our method can robustly improve object detection in domain bias settings.
 
 ## The Datasets of ours are:
 https://pan.baidu.com/s/1ZiEdHgRVhmBZvywUhvbBkQ              access code：odq6 
+
+## pre-trained models:
+
  
 ## Related works:
  * https://github.com/hustgetlijun/RCAN
@@ -13,7 +16,7 @@ https://pan.baidu.com/s/1ZiEdHgRVhmBZvywUhvbBkQ              access code：odq6
 * torchvision == 0.2.0
 * Python 3
 ## Environmental settings：
-This repository is developed using python 3.6.7 on Ubuntu 16.04.5 LTS. The CUDA nad CUDNN version is 10.0 and 7.4.1 respectively. We use one NVIDIA 2080ti GPU card for training and testing. Other platforms or GPU cards are not fully tested.
+This repository is developed using python 3.6.7 on Ubuntu 16.04.5 LTS. The CUDA nad CUDNN version is 10.0 and 7.4.1 respectively. We use one NVIDIA 2080ti GPU card for training and testing. Other platforms or GPU cards such as V100 are tested.
  
 ## Citing this repository：
  
