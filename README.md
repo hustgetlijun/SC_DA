@@ -16,8 +16,6 @@ https://pan.baidu.com/s/1yuwSkMjKSFr0InZAsHTs7Q             access code: qhr8
 * torchvision == 0.2.0
 * Python 3
 
-
-The usage of SW-ours is same to  SW-ICR-CCR .
 # To train SW-ours on cityscape:
 sh train_cityscape_allover.sh
 # To validate SW-ours on cityscape:
