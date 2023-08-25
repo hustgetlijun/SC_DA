@@ -203,8 +203,8 @@ class vgg16(_fasterRCNN):
         self.RCNN_base2 = nn.Sequential(*list(vgg.features._modules.values())[21:-1])
 
 
-        self.netD_pixel = netD_pixel(0, context=self.lc)
-        self.netD_pixel_mid = netD_pixel_mid(0,context=self.lc)
+        self.netD_pixel = netD_pixel(128, context=self.lc)
+        self.netD_pixel_mid = netD_pixel_mid(128,context=self.lc)
         self.netD = netD(0, context=self.gc)
 
         feat_d = 4096
