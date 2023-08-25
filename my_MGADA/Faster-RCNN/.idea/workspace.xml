@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac15103b-bb4a-4380-b748-72932738858c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2OMRskg1LEzk7nY5kcpZZzYHz9B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/MGADA/Faster-RCNN" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac15103b-bb4a-4380-b748-72932738858c" name="Default Changelist" comment="" />
+      <created>1681368672198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681368672198</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="487" y="337" width="1008" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1684319795127">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="487" y="337" width="1008" height="398" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1052@67.27.1853.1052" timestamp="1684319795127" />
+    <state x="777" y="330" width="759" height="589" key="FileChooserDialogImpl" timestamp="1684234717699">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="777" y="330" width="759" height="589" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1684234717699" />
+    <state x="485" y="183" width="1016" height="738" key="SettingsEditor" timestamp="1681377376017">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="485" y="183" width="1016" height="738" key="SettingsEditor/67.27.1853.1052@67.27.1853.1052" timestamp="1681377376017" />
+    <state x="538" y="553" key="com.intellij.ide.util.TipDialog" timestamp="1686555790493">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="538" y="553" key="com.intellij.ide.util.TipDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1686555790493" />
+    <state x="650" y="166" width="683" height="772" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1681458520684">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="650" y="166" width="683" height="772" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1052@67.27.1853.1052" timestamp="1681458520684" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/detection/modeling/pix_class/pix_class.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

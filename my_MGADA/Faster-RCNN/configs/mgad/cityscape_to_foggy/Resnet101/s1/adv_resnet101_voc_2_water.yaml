@@ -1,0 +1,210 @@
+#MODEL:
+#  BACKBONE:
+#    NAME: 'resnet101'
+#  RPN:
+#    ANCHOR_SIZES: (64, 128, 256, 512)
+#  ROI_BOX_HEAD:
+#    NUM_CLASSES: 7
+#    BOX_PREDICTOR: 'resnet101_predictor'
+#    POOL_TYPE: 'align'
+#
+#  ROI_ONE_DIS:
+#    DOM:
+#       LOSS_WEIGHT: 0.1
+#       MON: True
+#       DISCRIMINATOR: 'OneFCOSDiscriminator'
+#       NUM_CONVS: 3
+#       GRL_LAMBDA: 0.01
+#    CLS:
+#       LOSS_WEIGHT: 0.1
+#       MON: True
+#       DISCRIMINATOR: 'OneFCOSDiscriminator_cc'
+#       NUM_CONVS: 3
+#       GRL_LAMBDA: 0.01
+#       LOSS_DIRECT_W: 1.0
+#       LOSS_GRL_W: 0.1
+#       SAMPLES_THRESH: 0.8
+#       NUM_CLASSES: 2
+#
+#  ROI_TWO_DIS:
+#      DOM:
+#         LOSS_WEIGHT: 0.1
+#         MON: True
+#         DISCRIMINATOR: 'ResNetTwoDiscriminator'
+#         POOL_RESOLUTION: 7
+#         GRL_LAMBDA: 0.01
+##         OMIT_GATE: False
+#      CLS:
+#         LOSS_WEIGHT: 0.1
+#         MON: False
+#         DISCRIMINATOR: 'ResNetTwoDiscriminator_cc'
+#         POOL_RESOLUTION: 7
+#         GRL_LAMBDA: 0.02
+#         LOSS_DIRECT_W: 0.1
+#         LOSS_GRL_W: 0.1
+#         SAMPLES_THRESH: 0.6
+#         NUM_CLASSES: 7
+#ADV:
+##  LAYERS: [False, False, True]
+##  DIS_MODEL:
+##    - in_channels: 512
+##      func_name: 'cross_entropy'
+##      pool_type: 'avg'
+##      loss_weight: 1.0
+##      window_strides: [2, 2, 2, 2, 2, 2, 2]
+##      window_sizes: [3, 9, 15, 21, 27, 33, 37]
+#  LAYERS: [True, False, True]
+#  LAMBDA_FROM: 1.0
+#  LAMBDA_TO: 0.1
+#  DIS_MODEL:
+#    - in_channels: 256
+#      embedding_kernel_size: 1
+#      embedding_norm: True
+#      embedding_dropout: True
+#      func_name: 'cross_entropy'
+#      pool_type: 'avg'
+#      loss_weight: 0.01
+#      window_strides: [2, 2, 2, 2, 2, 2, 2]
+#      window_sizes: [3, 9, 15, 21, 27, 33, 38]
+#    - in_channels: 1024
+#      func_name: 'cross_entropy'
+#      pool_type: 'avg'
+#      loss_weight: 0.01
+#      window_strides: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+#      window_sizes: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 35, 38]
+##    - in_channels: 1024
+##      func_name: 'cross_entropy'
+##      pool_type: 'avg'
+##      loss_weight: 1.0
+##      window_strides: [2, 2, 2, 2, 2, 2, 2]
+##      window_https://github.com/tiankongzhang/MGADAsizes: [3, 9, 15, 21, 27, 33, 37]
+#
+#DATASETS:
+##  TRAINS: ['cityscapes_train']
+##  TARGETS: ['foggy_cityscapes_train_0.02']
+##  TESTS: ['foggy_cityscapes_val_0.02']
+#  TRAINS: ['watercolor_voc_2007_trainval', 'watercolor_voc_2012_trainval']
+#  TARGETS: ['watercolor_train']
+#  TESTS: ['watercolor_test']
+#
+#DATALOADER:
+#  NUM_WORKERS: 2
+#INPUT:
+#  TRANSFORMS_TRAIN:ls: reading directory '.': Input/output error
+#    - name: 'random_flip'
+#    - name: 'resize'
+#      min_size: 600
+#    - name: 'normalize'
+#      mean: [0.5, 0.5, 0.5]
+#      std: [0.5, 0.5, 0.5]
+#      to_01: True
+#    - name: 'collect'
+#  TRANSFORMS_TEST:
+#    - name: 'resize'
+#      min_size: 600
+#    - name: 'normalize'
+#      mean: [0.5, 0.5, 0.5]
+#      std: [0.5, 0.5, 0.5]
+#      to_01: True
+#    - name: 'collect'
+#SOLVER:
+#  EPOCHS: 36ls: reading directory '.': Input/output error
+#  STEPS: (1600, 2600)
+#  LR: 3e-4
+#  BATCH_SIZE: 4
+#  WEIGHT_DECAY: 0.0001
+#  #GAMMA: 0.5
+#  GAMMA: 0.1
+#TEST:
+#  EVAL_TYPES: ['voc']
+#
+#WORK_DIR: './debug/voc_to_watercolor/s0/adv_voc_2_water'
+
+MODEL:
+  BACKBONE:
+    NAME: 'resnet101'
+  RPN:
+    ANCHOR_SIZES: (64, 128, 256, 512)
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 7
+    BOX_PREDICTOR: 'resnet101_predictor'
+    POOL_TYPE: 'align'
+
+  ROI_ONE_DIS:
+    DOM:
+       LOSS_WEIGHT: 0.1
+       MON: True
+       DISCRIMINATOR: 'OneFCOSDiscriminator'
+       NUM_CONVS: 3
+       GRL_LAMBDA: 0.01
+
+  ROI_TWO_DIS:
+      DOM:
+         LOSS_WEIGHT: 0.1
+         MON: True
+         DISCRIMINATOR: 'ResNetTwoDiscriminator'
+         POOL_RESOLUTION: 7
+         GRL_LAMBDA: 0.01
+#         OMIT_GATE: False
+      CLS:
+         LOSS_WEIGHT: 0.1
+         MON: True
+         DISCRIMINATOR: 'ResNetTwoDiscriminator_cc'
+         POOL_RESOLUTION: 7
+         GRL_LAMBDA: 0.02
+         LOSS_DIRECT_W: 0.1
+         LOSS_GRL_W: 0.1
+         SAMPLES_THRESH: 0.6
+         NUM_CLASSES: 7
+
+ADV:
+  LAYERS: [True, False, True]
+  LAMBDA_FROM: 1.0
+  LAMBDA_TO: 0.1
+  DIS_MODEL:
+    - in_channels: 256
+      embedding_kernel_size: 1
+      embedding_norm: True
+      embedding_dropout: True
+      func_name: 'cross_entropy'
+      pool_type: 'avg'
+      loss_weight: 0.01
+      window_strides: [2, 2, 2, 2, 2, 2, 2]
+      window_sizes: [3, 9, 15, 21, 27, 33, 38]
+    - in_channels: 1024
+      func_name: 'cross_entropy'
+      pool_type: 'avg'
+      loss_weight: 0.01
+      window_strides: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+      window_sizes: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 35, 38]
+DATASETS:
+  TRAINS: ['watercolor_voc_2007_trainval', 'watercolor_voc_2012_trainval']
+  TARGETS: ['watercolor_train']
+  TESTS: ['watercolor_test']
+INPUT:
+  TRANSFORMS_TRAIN:
+    - name: 'random_flip'
+    - name: 'resize'
+      min_size: 600
+    - name: 'normalize'
+      mean: [0.5, 0.5, 0.5]
+      std: [0.5, 0.5, 0.5]
+      to_01: True
+    - name: 'collect'
+  TRANSFORMS_TEST:
+    - name: 'resize'
+      min_size: 600
+    - name: 'normalize'
+      mean: [0.5, 0.5, 0.5]
+      std: [0.5, 0.5, 0.5]
+      to_01: True
+    - name: 'collect'
+SOLVER:
+  EPOCHS: 10
+  STEPS: (8, 9)
+  LR: 1e-5  #1e-5
+  BATCH_SIZE: 2
+TEST:
+  EVAL_TYPES: ['voc']
+
+WORK_DIR: './debug/adv_voc_2_watercolor/s1'
