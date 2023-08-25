@@ -176,8 +176,8 @@ class _fasterRCNN(nn.Module):
         pix_weight=pix_weight_object.view(-1,1)
         pix_weight=pix_weight.detach()
 
-        #base_object_feat = torch.cat((base_feat1, feat_object), dim=1)
-        base_object_feat = base_feat1
+        base_object_feat = torch.cat((base_feat1, feat_object), dim=1)
+        #base_object_feat = base_feat1
 
         windows = get_receptive_field_feature(base_feat1,im_data,(32,32),4)#VGG16
         # windows = get_receptive_field_feature(base_feat1, im_data, (35, 35), 4)  # resnet101
@@ -216,8 +216,8 @@ class _fasterRCNN(nn.Module):
         pix_mid_weight=pix_mid_weight_.view(-1,1)
         pix_mid_weight=pix_mid_weight.detach()
 
-        #base_class_feat = torch.cat((base_feat_mid, feat_mid), dim=1)
-        base_class_feat = base_feat_mid
+        base_class_feat = torch.cat((base_feat_mid, feat_mid), dim=1)
+        #base_class_feat = base_feat_mid
 
         # print('feat base shape is :',feat_base.size())
         windows = get_receptive_field_feature(base_feat_mid,im_data,(76,76),8) #Vgg16
